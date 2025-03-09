@@ -11,11 +11,11 @@ import com.time.love.services.LoveServices;
 public class LoveController {
 	
 	@Autowired
-    private LoveServices loveService;
+    private LoveServices getService;
 	
 	@GetMapping("/")
 	public String taskStarted(Model model) {
-		loveService.getCalculo(model);
+		getService.getCalculo(model);
         return "index";
     }
 }
