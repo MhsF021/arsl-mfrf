@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -23,27 +22,33 @@ h1 {
 	font-size: 2rem;
 	margin-bottom: 10px;
 	font-weight: bold;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.45);
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.65);
+	color: white !important;
+	font-family: 'Alegreya Sans Black';
 }
 
 p {
 	font-size: 1.2rem;
 	margin-bottom: 20px;
 	opacity: 0.9;
+	color: white;
+	text-align: center ;
+	font-family: 'Alegreya';
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
 }
 
 .contador {
 	font-size: 1.5rem;
 	font-weight: bold;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.35);
 	padding: 15px;
 	border-radius: 10px;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.65);
 	display: inline-block;
 	margin-bottom: 20px;
 	text-align: center;
 	color: white;
-}
+}	
 
 /* Estilização do Carrossel */
 .carousel {
@@ -62,6 +67,10 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.carousel .carousel-item{
+	transition: transform 0.8s ease-in-out;
 }
 
 .carousel .carousel-item img {
@@ -92,7 +101,7 @@ p {
 }
 
 .carousel .carousel-caption h5{
-	font-size: 1.7rem;
+	font-size: 1.3rem;
 }
 
 /* Responsividade */
@@ -115,8 +124,11 @@ p {
 		object-fit: contain;
 	}
 	.carousel .carousel-caption {
-		font-size: 1rem; padding : 8px; bottom : 15px; width : 90%; max-width :
-		350px;
+		font-size: 1rem; 
+		padding : 8px;
+		bottom : 15px; 
+		width : 90%; 
+		max-width : 350px;
 		background: rgba(0, 0, 0, 0.35);
 		backdrop-filter: blur(6px);
 		display: block !important;
